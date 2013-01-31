@@ -1,3 +1,8 @@
 $(document).ready(function() {
-  $('#page_content').append('<p>It is a great day!</p>');
+  var dr = rollDice();
+  $('#page_content').append('<p style="text-align:center;">' + dr + '</p>');
 });
+
+var rollDice = function() {
+  return _.random(1, 6) + _.random(1, 6);
+};
