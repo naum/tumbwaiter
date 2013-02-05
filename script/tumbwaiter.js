@@ -4,5 +4,5 @@ $(document).ready(function() {
 });
 
 var rollDice = function() {
-  return _.random(1, 6) + _.random(1, 6);
+  return _.random(0, 99);
 };
