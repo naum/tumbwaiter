@@ -1,8 +1,5 @@
 $(document).ready(function() {
-  var dr = rollDice();
-  $('#page_content').append('<p style="text-align:center;">' + dr + '</p>');
+  $('#but_fetch_tumblr').on('click', function() {
+    $('#resultout').html(_.random(999));
+  });
 });
-
-var rollDice = function() {
-  return _.random(0, 99);
-};
